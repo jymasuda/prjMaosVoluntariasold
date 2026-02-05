@@ -1,7 +1,7 @@
 # Mãos Voluntárias (antigo)
 
 Projeto de TCC realizado para o curso de Técnico de Informática para Internet integrado ao Ensino Médio.
-Proposta de website para organização de eventos de trabalho voluntário com ingresso de voluntarios
+Proposta de website para organização de eventos de trabalho voluntário com ingresso de voluntarios. Projeto iniciado e finalizado durante o período letivo de 2023
 
 ## ✒️ Autores
 
