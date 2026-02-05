@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="deletarEvento.aspx.cs" Inherits="prjMaosVoluntarias.Libs.deletarEvento" %>

@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="criarVaga.aspx.cs" Inherits="prjMaosVoluntarias.Libs.criarVaga" %>

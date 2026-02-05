@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="conferirInscricao.aspx.cs" Inherits="prjMaosVoluntarias.Libs.conferirInscricao" %>

@@ -1,0 +1,732 @@
+.escondido {
+    display: none;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background-color: #777879;
+    border-radius: 15px;
+    border: 2px solid #ffffff;
+  }
+
+main{
+    max-width: 80vw;
+    align-items: center;
+    margin: auto;
+}
+main p{
+    font-size: 20px;
+}
+.cinza-italico{
+    font-style: italic;
+    color: #777575;
+}
+
+.titulo-evento {
+    padding: 70px 0px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.titulo-evento h1{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.informacoes-evento{
+    display: flex;
+    padding-bottom: 50px;
+    justify-content: space-between;
+}
+
+.informacao{
+    display: flex;
+    /* margin: auto; */
+}
+.informacao span{
+    margin-right: 5px;
+}
+
+.data-hora{
+    width: 25%;
+    min-width: 260px;
+    margin: 0%;
+}
+.data-hora-textbox{
+    min-width: 260px;
+    margin: 0%;
+}
+
+.endereco{
+    width: 30%;
+}
+.endereco-textbox{
+    width: 60%;
+}
+.endereco-textbox div{
+    width: 100%;
+}
+
+.categoria{
+    width: 20%;
+    min-width: 200px;
+}
+.categoria-textbox{
+    min-width: 200px;
+}
+
+.nome-ong{
+    width: 20%;
+}
+
+.nome-ong img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0px 5px;
+}
+
+
+.sobre-evento {
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.sobre-editar{
+    display: flex;
+    justify-content: space-between;
+}
+.sobre-editar h1{
+    padding-bottom: 10px;
+}
+
+.span-editar{
+    display: flex;
+}
+.span-editar.sobre{
+    padding-right: 30px;
+}
+
+.btn-editar{
+    margin: 0px 0px 16px 0px;
+}
+.btn-editar p{
+    user-select: none;
+    background-color: white;
+    border: 1px transparent solid;
+    cursor: pointer;
+    color: #777575;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.texto-evento{
+    width: 50%;
+}
+.texto-evento h1{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0px 0px 0px 0px 20px;
+}
+.texto-evento p{
+    /* font-size: 18px; */
+    width: 90%;
+}
+.span-deletar-evento {
+    display: flex;
+    cursor: pointer;
+    color: red;
+    justify-content: flex-end;
+    margin-left: 5px;
+}
+
+.span-deletar-evento p {
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.img-evento {
+    position: relative;
+    width: 50%;
+    min-height: 350px;
+    max-height: 500px;
+    padding: 20px;
+}
+
+    .img-evento img {
+        width: 100%;
+        height: 100%;
+    }
+#editar-foto {
+    margin: 22px 22px 0px 0px;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 0 0 0 10px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+#editar-foto:hover {
+        font-style: italic;
+    }
+#inputImagem {
+    display: none;
+}
+
+#inputAdcImgGaleria {
+    display: none;
+}
+
+.titulo-vaga{
+    display: flex;
+}
+.titulo-vaga-texto{
+    padding-right: 50px;
+}
+.titulo-vaga-texto h1{
+    font-size: 24px;
+    font-weight: bold;
+}
+.titulo-vaga-texto p{
+    font-style: italic;
+    color: #777575;
+    padding-bottom: 20px;
+}
+.span-editar{
+    cursor: pointer;
+}
+.span-editar.editar-vaga{
+    padding-top: 18px;
+}
+
+.vaga{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+    .vaga.visualizacao {
+        justify-content: normal;
+    }
+
+/*#txtInicioVaga { mudei
+    margin: 0px 5px;
+}*/
+
+.vagas {
+    width: 15%;
+    min-width: 200px;
+    overflow-y: auto;
+    height: 170px;
+    /*border-right: thin solid black;*/
+}
+
+.vagas div{
+    border-left: solid #777879;
+    margin-bottom: 10px;
+    display: flex;
+}
+.vagas div.selecionado{
+    border-left: solid #7EBCED;
+    color: #7EBCED;
+}
+.vagas p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 15px;
+    background-color: white;
+    border: 1px transparent solid;
+    cursor: pointer;
+    width: 150px;
+}
+.vagas img{
+    margin-left: 3px;
+}
+#deletar, #btnDelatarImg{
+    font-size: 26px;
+    color: red;
+}
+.descricao {
+    width: 70%;
+    padding-left: 20px;
+    border-left: thin solid black; /*mudei*/
+}
+.descricao-data{
+    padding-bottom: 15px;
+}
+.descricao-info{
+    padding-bottom: 15px;
+    min-height: 90px;
+}
+.descricao-aviso{
+    color: #777575;
+    font-style: italic;
+}
+
+.botao{
+    width: 150px;
+    display: flex;
+    align-items: end;
+    text-align: center;
+}
+    .botao p {
+        padding-bottom: 2px;
+        font-size: 18px;
+        min-width: 170px;
+    }
+
+.galeria{
+    padding-bottom: 70px;
+}
+.galeria h1{
+    font-size: 24px;
+    font-weight: bold;
+}
+.texto-galeria{
+    display: flex;
+}
+/*
+.galeria p {
+    margin: 10px 0;
+}*/
+
+.imagens-galeria {
+    display: flex;
+    width: 100%;
+}
+
+.imagem-galeria {
+    width: 25% !important;
+    min-height: 300px;
+    max-height: 400px;
+    padding: 10px 10px 10px 0px !important;
+    overflow: hidden !important;
+}
+
+    .imagem-galeria img {
+        width: 100%;
+        height: 100%;
+}
+
+.deletar-img {
+    margin: 10px 10px 0px 0px;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 0 0 0 10px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.f-carousel {
+    --f-carousel-spacing: 8px;
+}
+
+.f-button {
+    color: black !important;
+    background-color: white !important;
+    border-radius: 70px !important;
+}
+
+/*TEXTBOXES*/
+
+.text-box input[type=text],.text-box input[type=date],.text-box input[type=time],.text-box input[type=number],.text-box textarea{
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 0px 15px;
+}
+
+#txtTitulo {
+    width: 85%;
+}
+
+#txtDescricaoEvento {
+    width: 95%;
+    height: 350px;
+    padding-top: 10px;
+    border: 2px solid black;
+    resize: none;
+}
+
+.adicionar-vaga {
+    border-left: transparent !important;
+}
+
+.adicionar-vaga span{
+    font-weight: normal;
+    margin-left: 0px;
+    font-size: 20px;
+}
+
+#adicionar-vaga-icon{
+    font-size: 24px;
+}
+
+#txtNomeDaVaga{
+    border: 2px black solid;
+    width: 150px;
+    margin-left: 10px;
+    padding: 0px 8px;
+    height: 30px;
+    font-weight: normal;
+}
+
+.adicionar-imagem {
+    align-items: center;
+    padding-left: 20px;
+    display: flex;
+}
+
+.adicionar-imagem p{
+    border: 1px transparent;
+    background-color: white;
+    font-size: 20px;
+}
+
+.inputVagas{
+    margin-right: 5px;
+} /*mudei*/
+#txtDataInicio {
+    width: 220px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 0px 15px;
+    padding: 0px 0px 0px 10px !important;
+    margin-bottom: 5px;
+}
+#txtDataFim {
+    width: 220px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 0px 15px;
+    padding: 0px 0px 0px 10px !important;
+}
+#ddlCategoriaVaga {
+    width: 160px;
+    height: 40px;
+    font-size: 18px;
+    /*mudei algo aq*/
+    border-radius: 5px;
+    border: 2px black solid;
+}
+.text-vaga{
+    display: flex;
+    flex-wrap: wrap;
+}
+.divDescricao {
+    width: 100%;
+} /*mudei*/
+#txtDescricaoVaga{
+    width: 95%;
+    height: 100px;
+    border: 2px solid black;
+    resize: none;
+}
+#txtQuantidadeVagas { /*mudei*/
+    /* height: 30px; */
+    width: 62px;
+    margin-bottom: 5px;
+    padding: 0px 5px;
+    /* font-size: 18px; */
+    /* border-radius: 5px; */
+    border: 2px black solid;
+}
+
+
+
+#text-box-data-hora input{
+    height: 40px; 
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 0px 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.input-datetime{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-datetime input[type=date]{
+    min-width: 200px;
+    width: 70%;
+}
+
+#text-box-endereco input{
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 0px 10px;
+    width: 95%;
+}
+
+#ddlCategoria{
+    height: 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/*Evento não existe*/
+
+.nao-existe-main{
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.txtNaoExiste {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+    .txtNaoExiste span, .voltarPagina span {
+        font-size: 30px;
+        padding: 0 5px;
+        color: black;
+    }
+
+.linkVoltar{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.voltarPagina a{
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 600px) {
+    /*    .container {
+        overflow: hidden;
+        position: relative;
+    }*/
+
+    .containerfooter {
+        font-size: 11px;
+    }
+
+
+    .container #myLinks {
+        display: none;
+    }
+
+    .container #myButtons {
+        display: none;
+    }
+
+
+
+    .container a.icon {
+        background-image: url(imgs/menu.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 15px;
+    }
+
+    .container a:hover {
+        color: black;
+    }
+
+    /*header .container {
+        height: 100%;
+        display: flex;
+    }
+
+    .container a {
+        color: white;
+        padding: 15px 14px;
+        text-decoration: none;
+        font-size: 16px;
+        display: flex;
+        width: 55%;
+    }
+
+    .logotipo {
+        width: 100%;
+    }*/
+
+    /*mudei*/ /*footer .logotipo{
+        width: 85%;
+        margin-top: 10px;
+    }
+
+    header .container > div {
+        display: flex;
+        gap: 0px;
+    }
+
+    .btn.header {
+        background-color: #4785B6;
+        font-size: 12px;
+    }
+
+    header .container nav {
+        display: none;*/
+    /*gap: 0px;
+            font-size: 11px;*/
+    /*}
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+    }*/
+
+
+    p {
+        font-size: 16px;
+    }
+
+    .titulo-evento {
+        padding: 20px 0px 7px 0px;
+    }
+
+    .informacoes-evento {
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    .data-hora {
+        width: 100%;
+    }
+
+    .endereco {
+        width: 100%;
+        padding: 7px 0 7px 0;
+    }
+
+    .categoria {
+        width: 100%;
+        min-width: 200px;
+        padding: 0 0 7px 0;
+    }
+
+    .nome-ong {
+        width: 100%;
+    }
+
+    .sobre-evento {
+        display: block;
+        padding-bottom: 0px;
+    }
+
+    .texto-evento {
+        width: 100%;
+    }
+
+        .texto-evento p {
+            width: 100%;
+        }
+
+    .img-evento {
+        width: 100%;
+        min-height: 223px;
+        padding: 20px 0;
+    }
+
+    .vagas {
+        width: 100%;
+        min-width: 200px;
+        overflow-y: auto;
+        height: 170px;
+        border-bottom: thin solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-right: none;
+    }
+
+    .descricao {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .botao p {
+        padding: 7px;
+    }
+
+    .vaga {
+        padding-bottom: 20px;
+        display: block;
+    }
+
+    .galeria {
+        padding-bottom: 0px;
+    }
+
+    .imagem-galeria {
+        min-height: 228px;
+    }
+
+    .logotipofooter {
+        display: none;
+    }
+
+    footer .container { /*mudei*/
+        display: block;
+        text-align: center;
+    }
+
+        footer .container * {
+            font-size: 11px;
+        }
+
+        footer .container section :first-child {
+            padding: 0px;
+        }
+
+        footer .container section div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 21px;
+        }
+    /*MUDEI*/ .imagem-galeria {
+        width: 100% !important;
+    }
+
+    footer .container a {
+        color: white;
+        padding: 15px 0px;
+        text-decoration: none;
+        font-size: 16px;
+        display: block;
+        font-size: 11px;
+    }
+
+    /*mudei*/ .galeria p {
+        min-height: 95px;
+    }
+}

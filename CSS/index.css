@@ -1,0 +1,439 @@
+main {
+  margin-bottom: 40px; }
+  main .container:not(:last-child) {
+    margin-bottom: 40px; }
+    
+.eventos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px; }
+  .eventos .evento {
+    background-color: #fff;
+    box-shadow: 0 9px 9px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    position: relative; }
+    .eventos .evento .evento_capa {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16/9;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 10px 10px 0 0; }
+    .eventos .evento .content {
+      padding: 20px; }
+      .eventos .evento .content > *:not(:last-child) {
+        margin-bottom: 10px;
+      }
+        .evento_descricao {
+            display: -webkit-box;
+            font-size: 14px;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            min-height: 85px;
+        }
+        .eventos .evento .content .evento_localizacao {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .eventos .evento .content .cinzaEItalico {
+            font-size: 12px;
+            color: gray;
+            font-style: italic;
+        }
+        .titulo-ong {
+            min-height: 80px;
+        }
+
+        h2 {
+            font-size: 22px;
+            min-height: 54px;
+        }
+
+.eventos .evento .evento_data {
+    position: absolute;
+    top: -1px;
+    right: 0px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 0 10px;
+    padding: 5px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.btn-adicionar-evento {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    height: 55px;
+    padding: 0px 10px;
+    justify-content: center;
+}
+
+    .btn-adicionar-evento div {
+        display: flex;
+    }
+
+    .btn-adicionar-evento h1 {
+        font-size: 20px;
+    }
+
+    .btn-adicionar-evento span {
+        padding-right: 7px;
+    }
+
+.carrosselElement {
+    width: 20% !important;
+}
+
+#carosselHeader > .f-carousel__nav > .f-button {
+    display: none !important;
+}
+
+--f-progress{
+    display: none !important;
+}
+    
+.icone{
+  text-align: center;
+}
+@media screen and (max-width: 1500px) {
+    .eventos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .dashboard {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .eventos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #grid_icones {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #banner button {
+        display: none;
+    }
+
+    .titulo-banner h1 {
+        font-size: 13px !important;
+    }
+
+    .titulo-banner p {
+        font-size: 13px !important;
+    }
+
+    .eventos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .dashboard {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .carrosselElement {
+        width: calc(100% / 1) !important;
+    }
+
+    main .container:last-child {
+        padding-bottom: 1px;
+    }
+
+    /*MUDEI ESSA COISA.container {
+        overflow: hidden;
+        position: relative;
+    }*/
+
+
+    .containerfooter {
+        font-size: 11px;
+    }
+
+
+    .container #myLinks {
+        display: none;
+    }
+
+    .container #myButtons {
+        display: none;
+    }
+
+
+    .container a.icon {
+        background-image: url(imgs/menu.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 15px;
+    }
+
+    .container a:hover {
+        color: black;
+    }
+    /*aqui*/
+    header .container {
+        height: 100%;
+        display: block;
+    }
+
+    .container a {
+        padding: 15px 14px;
+        text-decoration: none;
+        font-size: 16px;
+        /*     MUDEI deletei   width: 85%;*/
+        margin: 0 auto;
+    }
+
+    .perfil-popup a {
+        padding: 0;
+        margin: 0;
+    }
+
+    .logotipo {
+        width: 85%;
+    }
+
+    header .logotipo {
+        padding: 0;
+        margin: 10px 0 0 0;
+    }
+
+    header .buttons {
+        margin: 0px !important;
+        padding: 5px 0px;
+    }
+
+    header .container > div {
+        margin: 5px 0px;
+        justify-content: center;
+    }
+
+    .btn.header {
+        background-color: #4785B6;
+        font-size: 12px;
+    }
+    /*mudei*/ .contaUsuario {
+        justify-content: end !important;
+    }
+    /*mudei*/ .popup-header {
+        top: 120px !important;
+    }
+
+    header .container nav {
+        gap: 0px;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+        header .container nav a {
+            font-size: 15px;
+            padding: 0px;
+            margin: auto;
+            width: 30%;
+        }
+
+    nav:first-child {
+        width: 10% !important;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .btn.vazado {
+        padding: 8px 7px !important;
+        border: 1px solid #fff;
+    }
+
+    /*mudei*/ .contaUsuario {
+        gap: 5px !important;
+        padding: 5px 0 7px 0;
+        margin: 0 !important;
+    }
+
+
+    .logotipofooter {
+        display: none;
+    }
+
+    /*mudei*/ footer .container {
+        display: block;
+        text-align: center;
+    }
+    /*mudei*/ footer .logotipo {
+        width: 85%;
+        margin-top: 10px;
+    }
+
+    footer .container * {
+        font-size: 11px;
+    }
+
+    footer .container section :first-child {
+        padding: 0px;
+    }
+
+    footer .container section div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 21px;
+    }
+
+    footer .container a {
+        color: white;
+        padding: 15px 0px;
+        text-decoration: none;
+        font-size: 16px;
+        display: block;
+        font-size: 11px;
+    }
+}
+
+.titulo-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+}
+
+    .titulo-banner p {
+        font-size: 23px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .titulo-banner h1 {
+        font-size: 40px;
+        padding-bottom: 5px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+#banner {
+    width: 100%;
+    position: relative;
+}
+
+
+
+    #banner img {
+        width: 100%;
+    }
+
+    #banner button {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+#grid_icones {
+    gap: 0px;
+    padding-bottom: 50px;
+    align-content: center;
+}
+
+    #grid_icones .icone span {
+        aspect-ratio: 1/1;
+        font-size: 125px;
+        text-align: center;
+    }
+
+#btn-deslogar {
+    cursor: pointer;
+}
+
+#grid_icones .icone .text {
+    text-align: center;
+}
+
+#container_criarEvento {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+    #container_criarEvento::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-height: 100%;
+        width: 70%;
+        border-radius: 0 10px 10px 0;
+        background-color: #7EBCED;
+        z-index: -4;
+    }
+
+    #container_criarEvento img {
+        box-shadow: 0 9px 9px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        width: 40%;
+        height: 100%;
+    }
+
+    #container_criarEvento > div {
+        position: relative;
+        width: 60%;
+        padding: 40px;
+    }
+
+        #container_criarEvento > div h1 {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+        #container_criarEvento > div .text {
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        #container_criarEvento > div .verMais {
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            width: 70%;
+        }
+
+@media screen and (max-width: 500px) {
+    #grid_icones {
+        padding-bottom: 0px;
+    }
+}
+
+
+#criacaoDeEventos {
+    min-width: 150px;
+}
+
+    #criacaoDeEventos a {
+        color: white !important;
+    }

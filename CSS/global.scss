@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+
+$colorHeader: #4785B6;
+$colorPrincipal: #405CBF;
+$colorPrincipalHover: #20004B;
+
+.container{ 
+    width: 100%;
+    max-width: 80vw;
+    margin: 0 auto;
+    .container_title{
+        margin: 20px 0 40px 0;
+    }
+    .verMais{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 40px;
+    }
+}
+
+header{
+    background-color: $colorHeader;
+    .container{
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & > div{
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+        nav{
+            display: flex;
+            gap: 10px;
+            a{
+                display: block;
+                padding: 10px;
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.btn{
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    border: 0;
+    padding: 10px;
+    transition: 0.2s;
+    &.vazado{
+        border: 1px solid #fff;
+    }
+    &.azul{
+        background-color: $colorPrincipal;
+    }
+    &.header{
+        background-color: $colorHeader;
+    }
+
+    &:hover{
+        background-color: $colorPrincipalHover;
+    }
+    &:active{
+        box-shadow: 0 0 0 2px inset #fff;
+    }
+}
+
+.eventos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    .evento{
+        background-color: #fff;
+        border: 1px solid #000;
+        box-shadow: 0 9px 9px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        position: relative;
+        .evento_capa{
+            display: block;
+            width: 100%;
+            aspect-ratio: 16/9;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 10px 10px 0 0;
+        }
+        .content{
+            padding: 20px;
+
+            &>*:not(:last-child){
+                margin-bottom: 10px;
+            }
+            .evento_localizacao{
+                display: flex;
+                gap: 10px;
+                align-items: center;
+            }
+
+            .cinzaEItalico{
+                color: gray;
+                font-style: italic;
+            }
+        }
+        .evento_data{
+            position: absolute;
+            top: -2px;
+            right: -2px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            border-radius: 0 10px;
+            padding: 5px;
+        }
+    }
+}
+
+main{
+    .container{
+        &:not(:last-child){
+            margin-bottom: 40px;
+        }
+    }
+    margin-bottom: 40px;
+}
+
+footer{
+    background-color: $colorHeader;
+    position: relative;
+    bottom: 0;
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 20px;
+        align-items: center;
+
+        & * {
+            color: #fff;
+        }
+        section{
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                gap: 10px;
+                a{
+                    text-decoration: none;
+                }
+            }
+            & :first-child{
+                padding: 10px;
+            }
+            p{
+                padding: 10px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .eventos{
+        grid-template-columns: repeat(3, 1fr);
+    }    
+}
+
+@media screen and (max-width: 1000px) {
+    .eventos{
+        grid-template-columns: repeat(2, 1fr);
+    }    
+}
+
+@media screen and (max-width: 600px) {
+    .eventos{
+        grid-template-columns: repeat(1, 1fr);
+    }    
+}

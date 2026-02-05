@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="pegarCategoriasFuncao.aspx.cs" Inherits="prjMaosVoluntarias.Libs.pegarCategoriasFuncao" %>

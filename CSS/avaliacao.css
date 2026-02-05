@@ -1,0 +1,235 @@
+
+/*Css único da página de inscrições*/
+
+main {
+    width: 70%;
+    min-height: max-content;
+    margin: 0px auto;
+}
+
+.titulo {
+    text-align: center;
+    margin: 60px 0px;
+}
+
+    .titulo h1 {
+        font-size: 24px;
+    }
+
+.bold {
+    font-weight: bold;
+}
+
+
+.inscricoes {
+    display: flex;
+    margin: auto;
+}
+
+.area-vagas {
+    min-width: 200px;
+    max-width: 300px;
+}
+
+    .area-vagas div {
+        border-left: solid #777879;
+        margin-bottom: 10px;
+    }
+
+    .area-vagas h1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .area-vagas div.selecionado {
+        border-left: solid #7EBCED;
+    }
+
+    .area-vagas .selecionado input[type="button"] {
+        color: #7EBCED;
+        font-style: italic;
+    }
+
+    .area-vagas input[type="button"] {
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 15px;
+        background-color: white;
+        border: 1px transparent solid;
+        cursor: pointer;
+    }
+
+.area-voluntarios {
+    width: 100%;
+}
+
+
+.voluntario {
+    display: flex;
+    align-items: center;
+    margin-left: 35px;
+}
+
+.icon-usuario {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.area-voluntarios .crop-icon {
+    width: 37px;
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0px 5px;
+}
+
+    .area-voluntarios .crop-icon img {
+        display: inline;
+        margin: 0 auto;
+        height: 100%;
+        width: 100%;
+    }
+
+.area-voluntarios h2 {
+    font-size: 16px;
+    width: 100%;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.area-voluntarios p {
+    font-size: 16px;
+    color: #777575;
+    font-style: italic;
+    margin-left: 25px;
+    margin: 5px 0 15px 25px;
+}
+
+.icon-usuario h2 {
+    height: 60px;
+    min-width: 200px;
+    max-width: 400px;
+    margin-right: 10px;
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+.avaliacao-usuario {
+    display: flex;
+    width: 40%;
+}
+
+    .avaliacao-usuario p, .avaliacao-usuario input[type="number"] {
+        color: black;
+        margin-left: 0px;
+        margin-top: 7px;
+        font-size: 16px;
+        font-style: italic;
+        padding: 0 3px;
+    }
+
+.estrela {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+    color: #FFBB00;
+    font-size: 25px !important;
+    margin: 0 2px;
+}
+
+.vaga {
+    width: 100%;
+    padding-right: 7%;
+}
+
+    .vaga p {
+        margin: 0;
+    }
+
+.icons {
+    display: flex;
+}
+
+    .icons span {
+        font-size: 35px !important;
+        font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48;
+        margin: 0 5px;
+    }
+
+
+.area-comentario textarea {
+    width: 100%;
+    border-radius: 13px;
+    padding: 10px;
+    border: 2px solid #000000;
+    resize: none;
+}
+
+.area-comentario div.label {
+    display: flex;
+}
+
+.area-comentario p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.area-comentario span.pronto {
+    display: flex;
+    align-items: end;
+    font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 200, 'opsz' 48;
+}
+
+.area-comentario .textbox {
+    display: flex;
+}
+
+.label {
+    margin: 2px 0 0
+}
+
+#btnPronto {
+    text-align: center;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    margin-left: 9%;
+    margin-top: 135px;
+}
+/* CSS para elemento de colapso javascript, usável em qualquer outro similar --------------------------- */
+
+.collapsible {
+    background-color: white;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+}
+
+    .collapsible:after {
+        content: '\2BC8';
+        color: black;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+        margin-top: -35px;
+        font-size: 20px;
+    }
+
+.active:after {
+    content: "\2BC6";
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.content {
+    margin-left: 35px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+/* --------------------------------------------------------------------------------- */
+

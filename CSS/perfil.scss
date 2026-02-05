@@ -1,0 +1,87 @@
+@import '../global';
+
+#banner{
+    width: 100%;
+    position: relative;
+    img{
+        width: 100%;
+    }
+    button{
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+#grid_icones{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    align-content: center;
+    .icone{
+        img{
+            display: block;
+            aspect-ratio: 1/1;
+            width: 100%;
+            padding: 20px;
+        }
+        .text{
+            text-align: center;
+        }
+    }
+}
+#container_criarEvento{
+    position: relative;
+    display: flex;
+    align-items: center;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-height: 100%;
+        width: 70%;
+        border-radius: 0 10px 10px 0;
+        background-color: #7EBCED;
+        z-index: -4;
+    }   
+    img{
+        box-shadow: 0 9px 9px rgba(0, 0, 0,0.3);
+        border-radius: 10px;
+        width: 40%;
+        height: 100%;
+    }
+    &>div{
+        position: relative;
+        width: 60%;
+        padding: 40px;
+        h1{
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        .text{
+            padding: 10px;
+            font-size: 20px;
+        }
+        .verMais{
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            width: 70%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    #grid_icones{
+        grid-template-columns: repeat(3, 1fr);
+    }    
+}
+
+@media screen and (max-width: 500px) {
+    #grid_icones{
+        grid-template-columns: repeat(2, 1fr);
+    }    
+}
