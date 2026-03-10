@@ -14,10 +14,3 @@ Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 * **Victor Murilo Castro** - *Design, Wireframe* - 
 * **Victor Medeiros** - *Design, Wireframe* - 
 
-## 🎁 Agradecimentos
-
-* Obrigado por nos orientar Maristela e André
-* Frederico Arco e Flexa Machado foi o melhor professor que tive dentre os que tive, tenho e terei com toda certeza.
-
-
----
