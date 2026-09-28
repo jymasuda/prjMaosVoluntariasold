@@ -47,9 +47,9 @@ Também atuei, em conjunto com o restante da equipe, na modelagem do banco de da
 
 ### Passos
 ```bash
-git clone https://github.com/jymasuda/[nome-do-repositorio].git
-cd [nome-do-repositorio]
-# Crie o banco de dados MySQL com o script [nome do script SQL] e ajuste a string de conexão
+git clone https://github.com/jymasuda/prjMaosVoluntariasold.git
+cd prjMaosVoluntariasold
+# Crie o banco de dados MySQL com o script Maos Voluntarias Tables FINAL.sql e Maos Voluntarias Procedures FINAL.sql e ajuste a string de conexão
 dotnet run
 ```
 
